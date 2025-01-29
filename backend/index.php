@@ -1,5 +1,10 @@
 <?php
 
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+    header("Access-Control-Allow-Headers: Content-Type, Authorization");
+    header("Content-Type: application/json");
+
     // Getting data number of people/player ($_get)
     if (isset($_GET['num_people']) && is_numeric($_GET['num_people'])) {
         $num_people = (int)$_GET['num_people'];
@@ -55,6 +60,12 @@
             "status" => "success",
             "message" => "Cards distributed successfully",
             "data" => $output
+        ]);
+    }  else {
+        // Handle missing or invalid input
+        echo json_encode([
+            "status" => "error",
+            "message" => "Input value does not exist or value is invalid"
         ]);
     }
 
