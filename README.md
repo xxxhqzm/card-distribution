@@ -143,6 +143,8 @@ RAW Result
 
 1. If no input or invalid input is provided:
    - Backend response: `Input value does not exist or value is invalid`
+2. If an unexpected error occurs:
+   - Backend response: `Irregularity occurred`
 
 ## Environment Details
 
