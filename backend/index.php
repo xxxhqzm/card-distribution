@@ -65,8 +65,9 @@
         // Handle missing or invalid input
         echo json_encode([
             "status" => "error",
-            "message" => "Input value does not exist or value is invalid"
+            "message" => "Irregularity occurred"
         ]);
+        exit;
     }
 
 ?>
