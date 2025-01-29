@@ -52,7 +52,7 @@
                 resultsDiv.innerHTML = "<h2>Result</h2>";
                 errorElement.innerHTML = '';
 
-                resultRawDiv.innerHTML = `<h2>RAW Result</h2><br><pre>${JSON.stringify(datareceived, null, 2)}</pre>`;
+                resultRawDiv.innerHTML = `<h2>RAW Result</h2><pre>${JSON.stringify(datareceived, null, 2)}</pre>`;
                 const rows = datareceived.map(row => row.split(','))
                 rows.forEach((row, index) => {
                     const personRow = document.createElement("div");
