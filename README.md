@@ -152,6 +152,13 @@ RAW Result
 - **Backend**: PHP 7.4 with Apache.
 - **Docker Compose**: Orchestrates both frontend and backend services.
 
+## Time Spent
+- understanding and analyzing the requirement (1-2 hours)
+- backend developement (2-3 hours)
+- frontend developement (1-2 hours)
+- testing and refining (60-90 minutes)
+- Final Adjustments and Documentation (1-2 hours)
+
 ## Author
 Hana Quzaima Alias
 
